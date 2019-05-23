@@ -23,3 +23,26 @@ python2.7 ./install.py --all
 ```
 
 fin!!
+
+
+# Linux
+
+* any
+
+```
+yum install cmake go
+```
+
+* node
+
+```
+curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+yum install -y nodejs
+```
+
+* rust
+
+```
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+```
