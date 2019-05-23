@@ -46,3 +46,16 @@ yum install -y nodejs
 curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 ```
+
+
+```
+mkdir .vim
+cd .vim
+mkdir autoload
+cd autoload
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cd
+vim +PlugInstall +qall
+cd .vim/plugged/YouCompleteMe/
+python2.7 ./install.py --all
+```
